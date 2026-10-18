@@ -1,0 +1,565 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@source "../node_modules/streamdown/dist/*.js";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Ritorica design system.
+ * Brand blue #4072D6, soft blue-grey page background, white cards,
+ * dark navy panels for developer content. Roboto (Latin) + Hind Siliguri (Bengali).
+ */
+
+@theme inline {
+  --font-sans: "Roboto", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-violet: var(--violet);
+  --color-sky: var(--sky);
+  --color-pink: var(--pink);
+  --color-primary-glow: var(--primary-glow);
+  --color-code-req: var(--code-req);
+  --color-price: var(--price);
+  --color-price-foreground: var(--price-foreground);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-navy-muted: var(--navy-muted);
+  --color-code-key: var(--code-key);
+  --color-code-type: var(--code-type);
+  --color-code-ok: var(--code-ok);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --shadow-card: 0 1px 2px oklch(0.3 0.05 260 / 0.04), 0 8px 24px oklch(0.45 0.12 262 / 0.06);
+  --shadow-lift: 0 12px 32px oklch(0.45 0.15 262 / 0.14);
+  --shadow-button: 0 6px 18px oklch(0.56 0.17 262 / 0.28);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.973 0.007 255);
+  --foreground: oklch(0.23 0.03 285);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.23 0.03 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.23 0.03 285);
+  --primary: oklch(0.56 0.165 262);
+  --primary-foreground: oklch(0.99 0 0);
+  --primary-soft: oklch(0.95 0.025 262);
+  --secondary: oklch(0.95 0.015 260);
+  --secondary-foreground: oklch(0.3 0.06 265);
+  --muted: oklch(0.955 0.01 255);
+  --muted-foreground: oklch(0.48 0.025 265);
+  --accent: oklch(0.94 0.03 262);
+  --accent-foreground: oklch(0.45 0.16 262);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --success: oklch(0.6 0.15 155);
+  --warning: oklch(0.68 0.17 55);
+  --violet: oklch(0.58 0.2 295);
+  --sky: oklch(0.68 0.13 215);
+  --pink: oklch(0.62 0.2 0);
+  --primary-glow: oklch(0.74 0.12 262);
+  --code-req: oklch(0.68 0.19 25);
+  /* Price highlights use the Ritorica brand blue (client request: match the site colours). */
+  --price: oklch(0.56 0.165 262);
+  --price-foreground: oklch(0.99 0 0);
+  --navy: oklch(0.28 0.04 260);
+  --navy-deep: oklch(0.2 0.035 262);
+  --navy-foreground: oklch(0.96 0.005 255);
+  --navy-muted: oklch(0.72 0.03 258);
+  --code-key: oklch(0.8 0.15 75);
+  --code-type: oklch(0.8 0.12 210);
+  --code-ok: oklch(0.78 0.17 150);
+  --border: oklch(0.92 0.012 258);
+  --input: oklch(0.9 0.015 258);
+  --ring: oklch(0.56 0.165 262);
+  --chart-1: oklch(0.56 0.165 262);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.23 0.03 285);
+  --sidebar-primary: oklch(0.56 0.165 262);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.95 0.025 262);
+  --sidebar-accent-foreground: oklch(0.3 0.06 265);
+  --sidebar-border: oklch(0.92 0.012 258);
+  --sidebar-ring: oklch(0.56 0.165 262);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  html[lang="bn"] body {
+    font-family: "Hind Siliguri", "Roboto", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-site {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 80rem;
+    padding-inline: 1.5rem;
+  }
+  .surface-card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-card);
+  }
+  .heading-brand {
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  .feature-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+  .feature-tile-number {
+    position: absolute;
+    bottom: -1.25rem;
+    left: 1.25rem;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;
+    color: oklch(1 0 0 / 0.12);
+  }
+  .cta-dark {
+    border-radius: 1.5rem;
+    color: var(--color-navy-foreground);
+    background:
+      radial-gradient(circle at 12% 40%, oklch(0.45 0.16 262 / 0.55), transparent 40%),
+      radial-gradient(circle at 90% 90%, oklch(0.45 0.16 262 / 0.4), transparent 35%),
+      var(--color-navy-deep);
+  }
+  .code-panel {
+    background-color: var(--color-navy-deep);
+    color: var(--color-navy-foreground);
+    border-radius: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    line-height: 1.75;
+  }
+  /* Developer pages (ritorica.com look): blue gradient hero / CTA and dark navy bands. */
+  .dev-hero {
+    color: var(--color-navy-foreground);
+    background:
+      radial-gradient(circle at 20% 0%, oklch(0.5 0.15 262 / 0.45), transparent 45%),
+      linear-gradient(120deg, var(--color-navy-deep) 0%, oklch(0.38 0.12 262) 55%, var(--color-primary) 100%);
+  }
+  .dev-dark {
+    background-color: var(--color-navy-deep);
+    color: var(--color-navy-foreground);
+  }
+  .dev-card-dark {
+    background-color: var(--color-navy);
+    border: 1px solid oklch(1 0 0 / 0.08);
+    border-radius: 1rem;
+  }
+  .dev-code {
+    background-color: oklch(0.17 0.03 262);
+    color: var(--color-navy-foreground);
+    border-radius: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    line-height: 1.85;
+  }
+  .fade-up {
+    animation: fade-up 0.6s ease-out both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Motion layer (subtle, premium; all disabled by prefers-reduced-motion) ---------- */
+@layer components {
+  .anim-d1 { animation-delay: 0.12s; }
+  .anim-d2 { animation-delay: 0.24s; }
+  .anim-d3 { animation-delay: 0.36s; }
+  .anim-d4 { animation-delay: 0.5s; }
+
+  /* Soft breathing glow behind hero content. */
+  .hero-glow {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(60px);
+    background: radial-gradient(circle, oklch(0.68 0.13 215 / 0.35), oklch(0.56 0.165 262 / 0.18) 45%, transparent 70%);
+    animation: glow-breathe 9s ease-in-out infinite;
+    pointer-events: none;
+  }
+  .hero-float {
+    animation: hero-float 12s ease-in-out infinite;
+  }
+  .signal-line {
+    animation: dash-flow 2.4s linear infinite;
+  }
+  .signal-pulse {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: node-pulse 3.2s ease-out infinite;
+  }
+  .node-pulse {
+    animation: node-ring 2.6s ease-out infinite;
+  }
+
+  /* Card hover: lift, soft shadow, faint brand-blue border glow. Uses `translate` so it never fights the reveal transform. */
+  main article.surface-card,
+  main li.surface-card,
+  .card-lift {
+    transition: translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  main article.surface-card:hover,
+  main li.surface-card:hover,
+  .card-lift:hover {
+    translate: 0 -4px;
+    border-color: oklch(0.56 0.165 262 / 0.35);
+    box-shadow: var(--shadow-lift), 0 0 0 1px oklch(0.56 0.165 262 / 0.12), 0 0 28px oklch(0.68 0.13 215 / 0.12);
+  }
+  main article.dev-card-dark {
+    transition: translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  main article.dev-card-dark:hover {
+    translate: 0 -3px;
+    border-color: oklch(0.74 0.12 262 / 0.4);
+    box-shadow: 0 14px 34px oklch(0.1 0.03 262 / 0.5), 0 0 24px oklch(0.68 0.13 215 / 0.15);
+  }
+
+  /* Navigation: animated underline. */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.3rem;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  .nav-link:hover::after,
+  .nav-link[aria-expanded="true"]::after,
+  .nav-link[data-status="active"]::after {
+    transform: scaleX(1);
+  }
+
+  .page-enter {
+    animation: page-in 0.4s ease-out both;
+  }
+
+  /* Service cards: the channel icon floats up and tilts slightly in 3D on hover. */
+  .service-card .service-card-icon {
+    transition: translate 0.35s ease, rotate 0.35s ease, scale 0.35s ease;
+  }
+  .service-card:hover .service-card-icon {
+    translate: 0 -5px;
+    rotate: x 12deg;
+    scale: 1.06;
+  }
+
+  /* 3D service cards: mouse-driven tilt (vars set in ServiceCard), cursor glow, floating icon. */
+  main article.service-card {
+    position: relative;
+    isolation: isolate;
+    transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transition: transform 0.5s ease, translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, scale 0.2s ease;
+  }
+  main article.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 0%), oklch(0.68 0.13 215 / 0.16), transparent 55%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    main article.service-card:hover {
+      transition: transform 0.12s ease-out, translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    main article.service-card:hover::before {
+      opacity: 1;
+    }
+    main article.service-card:hover .service-card-icon {
+      animation: icon-float 2.4s ease-in-out infinite;
+      filter: drop-shadow(0 8px 14px oklch(0.56 0.165 262 / 0.28));
+    }
+  }
+  @media (hover: none) {
+    main article.service-card:active {
+      scale: 0.985;
+    }
+  }
+
+  /* Interactive OTP demo: "sending" dots. */
+  .demo-dot {
+    animation: demo-dot 0.9s ease-in-out infinite;
+  }
+
+  /* API connection illustration: packets run along the wires only while on screen. */
+  .api-wire {
+    background-image: repeating-linear-gradient(90deg, oklch(1 0 0 / 0.22) 0 6px, transparent 6px 12px);
+  }
+  .api-packet {
+    position: absolute;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: -0.25rem;
+    border-radius: 9999px;
+    opacity: 0;
+    box-shadow: 0 0 10px currentColor;
+    animation-duration: 2.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+  .api-packet-fwd {
+    animation-name: packet-fwd;
+    color: var(--color-primary);
+  }
+  .api-packet-back {
+    animation-name: packet-back;
+    color: var(--color-sky);
+    margin-top: 0.35rem;
+  }
+  .api-connection[data-playing="true"] .api-packet {
+    animation-play-state: running;
+  }
+
+  /* Gentle scroll parallax for decorative layers (no JS; unsupported browsers simply stay still). */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .parallax {
+        animation: parallax-drift linear both;
+        animation-timeline: view();
+      }
+    }
+  }
+
+  /* Client logo strip (About page): two identical groups slide left → right in a seamless loop. */
+  .logo-marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .logo-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: logo-marquee 45s linear infinite;
+  }
+  .logo-marquee:hover .logo-marquee-track {
+    animation-play-state: paused;
+  }
+  .logo-marquee-group {
+    display: flex;
+    gap: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-card-icon,
+    .demo-dot,
+    .api-packet,
+    .logo-marquee-track {
+      animation: none !important;
+    }
+    .api-packet {
+      display: none;
+    }
+    .logo-marquee {
+      mask-image: none;
+    }
+    .logo-marquee-track {
+      width: auto;
+      justify-content: center;
+    }
+    .logo-marquee-group {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 1.5rem;
+    }
+    .logo-marquee-group[aria-hidden] {
+      display: none;
+    }
+  }
+
+  /* Home OTP journey. */
+  .otp-wire {
+    background-image: repeating-linear-gradient(90deg, var(--color-primary) 0 6px, transparent 6px 12px);
+    opacity: 0.3;
+    animation: wire-flow 0.9s linear infinite;
+  }
+  .otp-bubble {
+    left: calc(12.5% + var(--pos) * 25%);
+    translate: -50% -175%;
+    transition: left 1s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.4s ease;
+    animation: otp-bob 1.6s ease-in-out infinite;
+  }
+  .otp-notif-in {
+    animation: notif-in 0.55s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  }
+  .otp-digit {
+    animation: digit-pop 0.35s ease-out both;
+    animation-delay: calc(var(--i) * 90ms + 0.25s);
+  }
+  .otp-check {
+    animation: check-pop 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+  }
+  .otp-float {
+    animation: otp-float 7s ease-in-out infinite;
+  }
+}
+
+@keyframes wire-flow {
+  to { background-position: 12px 0; }
+}
+@keyframes otp-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+@keyframes notif-in {
+  from { opacity: 0; transform: translateY(-16px) scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes digit-pop {
+  from { opacity: 0; transform: translateY(6px) scale(0.8); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes check-pop {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes otp-float {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-14px) rotate(3deg); }
+}
+
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.7; transform: translate(0, 0) scale(1); }
+  50% { opacity: 1; transform: translate(4%, -3%) scale(1.08); }
+}
+@keyframes hero-float {
+  0%, 100% { transform: scale(1.02) translateY(0); }
+  50% { transform: scale(1.04) translateY(-6px); }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -20; }
+}
+@keyframes node-pulse {
+  0% { opacity: 0.6; transform: scale(0.85); }
+  70%, 100% { opacity: 0; transform: scale(1.35); }
+}
+@keyframes node-ring {
+  0% { box-shadow: 0 0 0 0 oklch(0.56 0.165 262 / 0.45); }
+  70%, 100% { box-shadow: 0 0 0 10px oklch(0.56 0.165 262 / 0); }
+}
+@keyframes page-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes parallax-drift {
+  from { translate: 0 calc(var(--plx, 24px) * -1); }
+  to { translate: 0 var(--plx, 24px); }
+}
+@keyframes logo-marquee {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}

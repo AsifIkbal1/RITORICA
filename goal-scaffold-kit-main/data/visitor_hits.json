@@ -1,0 +1,2312 @@
+[
+  {
+    "id": "427ebbf3-5602-4e3b-9d7f-58d16d8eefb1",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:21:49.173Z"
+  },
+  {
+    "id": "eceb9579-492d-4f45-aec2-014d2ccfe462",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:21:49.166Z"
+  },
+  {
+    "id": "f936ccea-e6b6-4dae-b8d2-a4d4e58f2855",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:20:49.182Z"
+  },
+  {
+    "id": "100273f6-2b80-4bdb-bf2b-a34dffe03405",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:20:49.176Z"
+  },
+  {
+    "id": "5d5b18a8-0e42-4b19-83c3-2e596e0a5b04",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:19:49.175Z"
+  },
+  {
+    "id": "da0f961e-44ea-47dc-8cca-adac69fd0190",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:19:49.168Z"
+  },
+  {
+    "id": "6d26ab86-aa60-40be-97dd-fb26cb9e73ab",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:18:49.173Z"
+  },
+  {
+    "id": "35ed00da-42f9-4bfa-b305-6daf39e8d0f1",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:18:49.167Z"
+  },
+  {
+    "id": "02f581bf-83a0-4d56-a0ba-a5d9bf94705e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:17:49.181Z"
+  },
+  {
+    "id": "4f4dd0fa-ad9f-49d3-b096-4a738c825dd8",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:17:26.156Z"
+  },
+  {
+    "id": "d1d05cba-e45c-4207-b02d-321f2b224dd6",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:16:41.157Z"
+  },
+  {
+    "id": "2cf255c5-42b4-4cfd-8a3b-e73816d407d5",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:16:31.176Z"
+  },
+  {
+    "id": "10d1cf57-706e-40c1-9ae5-9cd0b7b0d240",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:16:01.085Z"
+  },
+  {
+    "id": "e657ba73-bb85-4a11-bf45-e896d3957e45",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:15:49.173Z"
+  },
+  {
+    "id": "c0ff4c06-bced-4361-9ffd-fbb19b2ad61e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:15:46.170Z"
+  },
+  {
+    "id": "cea55aad-d8af-4613-9e46-2bc35071425a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:15:01.164Z"
+  },
+  {
+    "id": "28bfe451-a2e7-4f1f-9a39-217a9597041c",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:14:26.157Z"
+  },
+  {
+    "id": "555bcf74-18a5-4ed0-93ec-399ef0c3c6d3",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:14:16.160Z"
+  },
+  {
+    "id": "44bd97ae-2eb3-4d8c-825a-793102a8ecd1",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:13:43.647Z"
+  },
+  {
+    "id": "92df47d1-5ef1-4fa4-ba56-8edab53542f1",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:13:31.171Z"
+  },
+  {
+    "id": "95fc23c3-bc27-44e2-805d-1ce14cd71335",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:12:49.168Z"
+  },
+  {
+    "id": "c2b909e4-7f52-4e4d-9f3c-d626986ca949",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:12:46.163Z"
+  },
+  {
+    "id": "2cafc665-69e1-49ca-94af-880af90184c8",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:12:01.166Z"
+  },
+  {
+    "id": "a20fdae3-58fd-4d43-97e2-d702c104295e",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:11:49.172Z"
+  },
+  {
+    "id": "598023f2-61c6-4296-8f72-5dd3248712f4",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:11:31.762Z"
+  },
+  {
+    "id": "a2c6adbd-197b-4041-b458-4a0df0943c06",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:10:49.171Z"
+  },
+  {
+    "id": "00cbf20b-a59b-4abb-abf8-f42ae1ce5b8a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:10:49.164Z"
+  },
+  {
+    "id": "7238cc73-24aa-4322-bb6f-37d174ecfe54",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:09:49.169Z"
+  },
+  {
+    "id": "d46412cf-7178-41d9-b01d-16a268da2729",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:09:11.167Z"
+  },
+  {
+    "id": "63579872-6d96-41df-94f0-28ee27ca6e36",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:08:49.181Z"
+  },
+  {
+    "id": "6cebeee6-7328-4d9e-932c-b32944ffef2c",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:08:26.169Z"
+  },
+  {
+    "id": "bdef8651-3242-4de7-be4d-482f2b42b4b8",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:07:49.163Z"
+  },
+  {
+    "id": "7de50d67-5276-496c-950e-59ff05d84f02",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:07:41.166Z"
+  },
+  {
+    "id": "2cf8f4ea-0784-4da7-b376-54dc4f5aca5c",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:06:56.157Z"
+  },
+  {
+    "id": "40c8d8f4-ec1f-4277-bf66-48374054c7b1",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:06:49.178Z"
+  },
+  {
+    "id": "45eea219-b24c-4bde-b6bb-a408fbde2134",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:06:11.166Z"
+  },
+  {
+    "id": "4933a429-68d3-4411-8403-84556d28879c",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:05:49.176Z"
+  },
+  {
+    "id": "a7148efb-98f7-4c22-8c8f-53f10df3efe3",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:05:25.245Z"
+  },
+  {
+    "id": "ef98de29-aafc-4064-bcde-15ef8caea87f",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:04:49.173Z"
+  },
+  {
+    "id": "4f3845d1-05dd-43ae-ac1b-4b86c6a967e5",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets/new",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:04:40.255Z"
+  },
+  {
+    "id": "554d123b-f061-41af-be68-020f3f6077f6",
+    "session_id": "v_4lqs57ma",
+    "path": "/tickets",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:04:32.965Z"
+  },
+  {
+    "id": "8f45f06a-3302-4f8b-9cf6-b914c21522c7",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:04:27.592Z"
+  },
+  {
+    "id": "bd501e9d-b6eb-4a2d-8c6f-2b6a8442f8fa",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:03:49.182Z"
+  },
+  {
+    "id": "1dc1dc44-317f-41e5-8fc1-503c7ea11cb1",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:03:49.173Z"
+  },
+  {
+    "id": "74015a96-4c75-46b9-b918-6bde56046bfb",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:02:49.182Z"
+  },
+  {
+    "id": "67161ad0-9259-43b7-b44a-32660a701ba0",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:02:49.175Z"
+  },
+  {
+    "id": "d21885d9-1f4d-4b81-b90a-bec59c80ccb0",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:01:49.173Z"
+  },
+  {
+    "id": "fbee168d-c0e1-4202-905b-00e65092169f",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:01:49.165Z"
+  },
+  {
+    "id": "0f5f7931-83dc-434d-bb27-4871c91219ad",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:00:49.180Z"
+  },
+  {
+    "id": "619a9361-1806-476d-9022-0e9e43e59936",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T11:00:49.174Z"
+  },
+  {
+    "id": "7a65e12b-6f8a-429e-b6a7-42e5f4a40f69",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:59:16.171Z"
+  },
+  {
+    "id": "fba102c5-c68c-4834-8950-bb0c13807a4a",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:59:15.161Z"
+  },
+  {
+    "id": "bf93c1da-9cb3-4cdb-9157-c9ad067b1a78",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:58:31.160Z"
+  },
+  {
+    "id": "dd5e9a53-ae3e-4f68-aef5-9988bb042b91",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:58:30.160Z"
+  },
+  {
+    "id": "8c5894ae-62d0-4113-be34-3c63b7d18b93",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:57:46.164Z"
+  },
+  {
+    "id": "627be116-0558-4a81-b23e-3c8d4ee6f903",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:57:45.166Z"
+  },
+  {
+    "id": "705b7c40-9095-474f-8c36-73fe3e37caaf",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:57:01.172Z"
+  },
+  {
+    "id": "3db8bc18-9f47-4f23-b117-8b36de17c52a",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:57:00.296Z"
+  },
+  {
+    "id": "150adc6b-31f0-44fe-a54b-45aebece4261",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:56:16.157Z"
+  },
+  {
+    "id": "9d24e9d1-3824-4246-bac6-9bcf98ac6c13",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:56:15.171Z"
+  },
+  {
+    "id": "7697d8f4-bf39-403f-ad15-51e0bf9b1cfe",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:55:31.180Z"
+  },
+  {
+    "id": "6d631216-dd54-4a94-bf51-852b09637ef0",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:55:30.168Z"
+  },
+  {
+    "id": "b110ccba-741b-4b1f-aae4-4c378f3aa6bb",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:54:45.949Z"
+  },
+  {
+    "id": "808415f7-15b4-44df-9b4a-8a798325ad62",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:54:44.945Z"
+  },
+  {
+    "id": "df50e0fb-19b6-4dbb-b553-92b8e8b48a76",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:54:23.089Z"
+  },
+  {
+    "id": "89537da0-9eb4-4fc6-9a07-76c366e64fab",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:54:23.073Z"
+  },
+  {
+    "id": "388bea47-2146-4847-bbf4-76cbc688bc52",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:53:28.211Z"
+  },
+  {
+    "id": "1a866293-c792-4351-9b59-75b6bac4d239",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:53:28.086Z"
+  },
+  {
+    "id": "122022b1-b418-4e87-9643-fd96ddc5172e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:53:12.989Z"
+  },
+  {
+    "id": "fb8fdb6d-138b-420c-8873-717ce9993f7e",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:53:12.920Z"
+  },
+  {
+    "id": "49f3c398-4f2e-4826-8930-c7272b46b162",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:52:49.169Z"
+  },
+  {
+    "id": "a5070171-bd7b-46cf-8a26-a24cae87386d",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:52:49.162Z"
+  },
+  {
+    "id": "68bddaee-6437-4857-8899-38bb52bcf458",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:51:49.172Z"
+  },
+  {
+    "id": "ebb6f4a6-923c-403f-aead-501cff75e569",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:51:49.164Z"
+  },
+  {
+    "id": "44c8c760-f209-4e42-b662-7c6cf226c8b2",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:50:49.177Z"
+  },
+  {
+    "id": "e000e220-4685-4b05-aca5-5a9161979703",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:50:49.171Z"
+  },
+  {
+    "id": "ce328c7f-7104-40c0-a8ac-900642900bce",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:49:38.173Z"
+  },
+  {
+    "id": "227e11ec-3fd5-4f69-9a15-eb7f64fb001b",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:49:37.160Z"
+  },
+  {
+    "id": "2fc7f178-79a5-4363-a9a6-b75bfbbf766a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:48:53.165Z"
+  },
+  {
+    "id": "44ffc511-8421-481f-83c1-b01c9307337d",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:48:52.160Z"
+  },
+  {
+    "id": "dfe0e9c1-9aa9-4ca5-ae3f-00d92638188e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:48:08.165Z"
+  },
+  {
+    "id": "7aadd1b0-9b93-4ac8-96eb-b60b48965232",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:48:07.163Z"
+  },
+  {
+    "id": "71d61b73-c5b5-48c5-adba-4372567a0e62",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:47:23.161Z"
+  },
+  {
+    "id": "8329e2f6-db2d-4776-a8af-ac0049755e46",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:47:22.172Z"
+  },
+  {
+    "id": "b655f309-648b-45e0-a773-d9d440852d0e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:46:38.162Z"
+  },
+  {
+    "id": "c8acada8-fe11-4071-9c66-39c7e94cbf3f",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:46:37.159Z"
+  },
+  {
+    "id": "f5bb682a-fbdd-4d98-8653-f6f470e1d83e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:45:53.165Z"
+  },
+  {
+    "id": "0be66eef-65d4-48d2-aeb9-5f8204ac095e",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:45:52.166Z"
+  },
+  {
+    "id": "0858d2b5-3083-481d-9937-ead0c9bd6efd",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:45:07.862Z"
+  },
+  {
+    "id": "8085ddce-e581-4ef4-9e7a-3dfb05bd1a19",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:45:06.887Z"
+  },
+  {
+    "id": "bc3ef925-52d4-4ae3-acb3-074ff9feff3a",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:45:06.785Z"
+  },
+  {
+    "id": "e536e244-aa9a-467e-a8b7-3a305b484552",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:57.873Z"
+  },
+  {
+    "id": "806f47c7-5761-485e-8928-b08e69c2d30e",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:56.877Z"
+  },
+  {
+    "id": "ea49be85-4d7b-4323-a4c1-f21f96d2ebeb",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:56.833Z"
+  },
+  {
+    "id": "3a08205d-ed8c-4ed9-a558-42043be584a3",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:42.900Z"
+  },
+  {
+    "id": "941496ac-8832-49f7-ba06-fdb0f5778ab1",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:41.892Z"
+  },
+  {
+    "id": "72866c22-f80c-4a39-8371-d97bfe62fb7c",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:41.821Z"
+  },
+  {
+    "id": "69216b70-2b94-45a0-93a0-0fe2c16e49e5",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:33.650Z"
+  },
+  {
+    "id": "b90ddaf4-42df-4256-85ec-320bbad6e6de",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:32.147Z"
+  },
+  {
+    "id": "ef46e04c-65f3-4717-80e4-99a812ee7153",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:32.081Z"
+  },
+  {
+    "id": "eea31cc3-8ad4-4d0b-93b8-f15e7fc5be1a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:14.382Z"
+  },
+  {
+    "id": "d3b543ea-1d20-41ae-959b-03fdff7b7fd1",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:13.031Z"
+  },
+  {
+    "id": "fe54cff7-3eb7-40fa-94f4-69ce54f28d99",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:13.000Z"
+  },
+  {
+    "id": "9d8555eb-5002-409e-b811-8e87f64777fb",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:09.165Z"
+  },
+  {
+    "id": "7d500c91-d147-49b5-b2a7-f4d315becc22",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:44:07.169Z"
+  },
+  {
+    "id": "f715e3d5-8765-44d5-824d-6deb0a281c74",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:23.607Z"
+  },
+  {
+    "id": "5c1c1725-504d-49f2-9d17-ed77676bebf6",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:22.142Z"
+  },
+  {
+    "id": "581904a5-f243-44bb-9cf7-87684c4cface",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:22.073Z"
+  },
+  {
+    "id": "862f2980-1845-4813-bcc4-45e059fa164d",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:14.923Z"
+  },
+  {
+    "id": "143087a5-9ac7-4c4d-9359-70a5b92b5b4c",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:13.375Z"
+  },
+  {
+    "id": "5ed6a92b-65f5-4c54-8b48-cd3a7de75fce",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:43:13.315Z"
+  },
+  {
+    "id": "49eadc16-544d-48f0-b198-93319eb580ec",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:42:14.396Z"
+  },
+  {
+    "id": "125be3f8-6323-4888-b72d-dc3992b3d092",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:42:13.094Z"
+  },
+  {
+    "id": "51c8667e-72d9-45e8-bb12-ffd70a541d28",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:42:13.076Z"
+  },
+  {
+    "id": "d04a9049-bb54-4d76-b956-4a00d6be3919",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:41:14.584Z"
+  },
+  {
+    "id": "3c34ac2f-c7f8-4640-805a-8a6d4d0d1da6",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:41:13.208Z"
+  },
+  {
+    "id": "2188236a-6609-42d9-bec5-6dcb47bc9b75",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:41:13.147Z"
+  },
+  {
+    "id": "ec2808f5-7dd2-4cbb-b7ca-664ffa4534ce",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:40:58.828Z"
+  },
+  {
+    "id": "4fa27ad4-c0a6-4f9d-aebf-eb219fec9df7",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:40:57.145Z"
+  },
+  {
+    "id": "712b9af6-b6dd-4f3d-a6a9-0dbe274ee2c3",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:40:57.114Z"
+  },
+  {
+    "id": "fd5ae994-28a5-443b-9887-5b60260fd31e",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:40:49.169Z"
+  },
+  {
+    "id": "33d1de56-c8da-4385-b970-774f69889135",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:40:49.163Z"
+  },
+  {
+    "id": "0c47061f-1484-4adb-ae47-147491756c61",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:39:49.169Z"
+  },
+  {
+    "id": "85ac5973-4ef9-4060-a447-c4f9df2de467",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:39:49.165Z"
+  },
+  {
+    "id": "fdd210b1-baa9-4691-aaef-5a44568fb43b",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:38:49.169Z"
+  },
+  {
+    "id": "048c7504-881e-4bb2-81e9-51fee16da50a",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:38:49.164Z"
+  },
+  {
+    "id": "d1f70803-97fb-49ef-a537-f31a94f902d7",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:37:49.174Z"
+  },
+  {
+    "id": "27bfafa8-ad2c-4353-b9db-e1ef9b495c83",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:37:49.167Z"
+  },
+  {
+    "id": "0f1233b9-ce7d-4486-9908-e58997ab1c92",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:36:49.172Z"
+  },
+  {
+    "id": "7c5845d5-ffc1-46db-8f96-ed1adcd4aa64",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:36:49.167Z"
+  },
+  {
+    "id": "a4d368eb-8235-411e-99c1-0c9369b573f2",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:35:49.171Z"
+  },
+  {
+    "id": "9a179e1e-203f-405b-b93b-2c44e45a324b",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:35:49.162Z"
+  },
+  {
+    "id": "514ef358-3642-4d1f-b8db-706dcbd10673",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:34:49.175Z"
+  },
+  {
+    "id": "2692abb7-bfd2-4c10-8a1a-0b5d120f86bd",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:34:49.167Z"
+  },
+  {
+    "id": "e6adf98f-78fc-40ce-b753-271a42f76530",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:33:49.170Z"
+  },
+  {
+    "id": "c6f3ade2-9db1-4f43-be7d-3091840829bc",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:33:49.163Z"
+  },
+  {
+    "id": "61896ef9-b53d-4d8f-a0fb-d9863cd03a8a",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:32:49.166Z"
+  },
+  {
+    "id": "5e49d3d1-02a9-4e3e-b66a-a0f6bd687cb2",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:32:16.157Z"
+  },
+  {
+    "id": "42e19613-ac55-4bed-b0c1-e4c62755e222",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:31:49.159Z"
+  },
+  {
+    "id": "0bd72aa2-31e4-4390-a956-c1b0bcda63ad",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:31:42.121Z"
+  },
+  {
+    "id": "04dd744e-a56f-46c7-a2f7-04fc0ad15c56",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:30:49.168Z"
+  },
+  {
+    "id": "d7c544c3-0d6e-4047-bcc5-375a17992034",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:30:49.162Z"
+  },
+  {
+    "id": "66bc0d74-5cb7-4afc-aaeb-6721d66632b1",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:29:49.169Z"
+  },
+  {
+    "id": "d2c3855e-7773-4919-98cc-4139e54ce7ef",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:29:49.165Z"
+  },
+  {
+    "id": "9d2feafd-012e-4443-a58c-4cdac2bd96fd",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:28:49.170Z"
+  },
+  {
+    "id": "cdf70755-e8a0-4058-ab58-7dfccd52f022",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:28:49.163Z"
+  },
+  {
+    "id": "9102f355-0967-46ba-af46-062cee741283",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:27:49.167Z"
+  },
+  {
+    "id": "287e1dd0-ebe9-4e4b-8e02-4a53a25522b2",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:27:49.162Z"
+  },
+  {
+    "id": "0c5f915a-acef-4ab0-95e7-02e75fa4e84d",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:26:49.170Z"
+  },
+  {
+    "id": "9df9c0c8-5097-4a3c-9a39-685bc96f1d80",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:26:49.165Z"
+  },
+  {
+    "id": "af7f3030-a72f-44e3-b7f9-8d6e4b707c56",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:25:49.172Z"
+  },
+  {
+    "id": "fc57d135-d490-4439-9406-e88b4170eae4",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:25:49.165Z"
+  },
+  {
+    "id": "f25b825a-cd92-435d-94a5-dda59905f52c",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:24:49.170Z"
+  },
+  {
+    "id": "e28c460f-b31d-4222-ae9c-ff72e5b66f75",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:24:49.165Z"
+  },
+  {
+    "id": "def4e76b-a232-426d-8339-e6583e46ecbb",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:23:49.176Z"
+  },
+  {
+    "id": "ad8dec7b-2239-48c6-924e-4f78bcdbeea6",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:23:49.164Z"
+  },
+  {
+    "id": "a7ad87ed-46fc-4dac-a4a6-995b354214fd",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:22:49.170Z"
+  },
+  {
+    "id": "1427340f-d841-43b1-bba9-63695f825dc5",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:22:49.164Z"
+  },
+  {
+    "id": "f0025c7a-e138-4a75-ba7a-a087a81c6765",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:21:49.170Z"
+  },
+  {
+    "id": "29492542-33b9-422c-8efa-70af85e9fa85",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:21:49.163Z"
+  },
+  {
+    "id": "3c59eec1-9c07-488b-90e0-28dd8f50fa6e",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:20:49.173Z"
+  },
+  {
+    "id": "d6d04309-3373-4899-806e-ab67683bf2a9",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:20:49.168Z"
+  },
+  {
+    "id": "53e8f44e-6a70-4cb2-8ccc-be144da9c08a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:19:49.165Z"
+  },
+  {
+    "id": "748676d8-2374-4294-98f3-bb280a46d49c",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:19:09.157Z"
+  },
+  {
+    "id": "4acce738-3dd7-4685-9191-6206803799fa",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:18:49.161Z"
+  },
+  {
+    "id": "6e292507-12d4-4941-8a5a-e12b872f8ce6",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:18:24.160Z"
+  },
+  {
+    "id": "b974c212-89c3-4389-bf3b-11b553de62d8",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:17:49.159Z"
+  },
+  {
+    "id": "39e3f2ca-2f2d-48f7-a3fd-27e31116ad16",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:17:39.155Z"
+  },
+  {
+    "id": "f0e7354a-94b0-45ba-9b48-09053160452f",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:16:54.162Z"
+  },
+  {
+    "id": "135421ee-821f-4c46-8df1-70e2dd8f1962",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:16:49.158Z"
+  },
+  {
+    "id": "fac3df2a-9791-4c0f-9878-8550d0d964f5",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:16:09.170Z"
+  },
+  {
+    "id": "4a4264e0-48c9-4fa9-ab72-561f719ed7bb",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:15:49.163Z"
+  },
+  {
+    "id": "4e81d017-5a71-4f17-94f1-cc1bbe3ba935",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:15:24.160Z"
+  },
+  {
+    "id": "77095b8c-36e7-4978-817b-9f25f2b680cc",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:14:39.156Z"
+  },
+  {
+    "id": "dd466dc7-aebc-4a5c-abda-1f59c80c464e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:14:16.159Z"
+  },
+  {
+    "id": "2ad8e694-b23a-4667-bfba-6f922b762aed",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:13:54.160Z"
+  },
+  {
+    "id": "9cc8e169-1c23-4943-9432-98ee40f0075a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:13:31.156Z"
+  },
+  {
+    "id": "f3e38e3d-c164-443b-82ed-ba2317024c7c",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:13:09.157Z"
+  },
+  {
+    "id": "6844d242-c001-4313-a081-e93b360bac3b",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:12:46.161Z"
+  },
+  {
+    "id": "5011c503-e2d7-45c7-a689-dbfb426ea74b",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:12:24.156Z"
+  },
+  {
+    "id": "a2471c46-dd6e-48cc-bf60-c815d4390d04",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:12:01.155Z"
+  },
+  {
+    "id": "d79405ce-d5bf-4ab2-b701-e6ee96cae212",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:11:39.157Z"
+  },
+  {
+    "id": "03c55a0c-7413-4469-9723-050c949b5299",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:11:16.165Z"
+  },
+  {
+    "id": "42e95cee-4081-45fc-a2a9-32d75e72bcc3",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:10:54.165Z"
+  },
+  {
+    "id": "f6ea91fb-15d9-41f8-ab28-26cafd16dd80",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:10:31.165Z"
+  },
+  {
+    "id": "dc39cba5-614e-4f76-9d02-4190f1b8ffa6",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:10:09.161Z"
+  },
+  {
+    "id": "d1ef0ac9-a65c-400d-ae11-69c3b0fcd5e6",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:45.509Z"
+  },
+  {
+    "id": "cf9fd7ba-103e-461d-b67e-91b96781507c",
+    "session_id": "v_z6nmcvrh",
+    "path": "/knowledge-base/articles",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:41.141Z"
+  },
+  {
+    "id": "329050e2-16dd-43d2-a892-9fb72128b7e3",
+    "session_id": "v_z6nmcvrh",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:33.233Z"
+  },
+  {
+    "id": "f705322e-6e6b-4bb4-b42a-d111818dd935",
+    "session_id": "v_z6nmcvrh",
+    "path": "/analytics",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:31.018Z"
+  },
+  {
+    "id": "cb54e6dd-6ec0-43b1-b400-81c60a513654",
+    "session_id": "v_z6nmcvrh",
+    "path": "/reports",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:28.588Z"
+  },
+  {
+    "id": "3519bbc3-caf4-424f-b24e-f4fd8624cabb",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:23.857Z"
+  },
+  {
+    "id": "323c0f28-8e81-4501-8dd1-cadbcd7a0e17",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:22.852Z"
+  },
+  {
+    "id": "2450d7b2-e76c-4561-9383-b086c7d9b9f9",
+    "session_id": "v_4lqs57ma",
+    "path": "/chat-history",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:22.299Z"
+  },
+  {
+    "id": "914a99c8-c3d4-4224-9409-2423ce71611f",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:15.160Z"
+  },
+  {
+    "id": "ebdb90a5-1c9f-47de-bc64-47c3486ba89c",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:09:07.162Z"
+  },
+  {
+    "id": "816eaab0-e08c-46ba-bd9b-fd2ae7acc6dd",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.913Z"
+  },
+  {
+    "id": "a57ac5ec-7d91-4649-adb7-6d013b036025",
+    "session_id": "v_z6nmcvrh",
+    "path": "/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.825Z"
+  },
+  {
+    "id": "1d07271c-d222-492e-9412-1d9f4e6c6865",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.705Z"
+  },
+  {
+    "id": "1fa5978f-57c8-41bd-9861-5f72e1f3f390",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.700Z"
+  },
+  {
+    "id": "f7865efe-31d9-42d3-bddd-9391dc1e4af3",
+    "session_id": "v_z6nmcvrh",
+    "path": "/",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.693Z"
+  },
+  {
+    "id": "585461f7-16b0-4a54-bc5e-72fad22c0306",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.330Z"
+  },
+  {
+    "id": "b2a5083e-01e9-4898-835f-3c6b9ef23cce",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:29.322Z"
+  },
+  {
+    "id": "3583a080-4545-4ebf-bfa3-aa1887962a6f",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:22.168Z"
+  },
+  {
+    "id": "9ddc644a-49e4-4e1c-94b6-bd89c0bba95d",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:08:22.162Z"
+  },
+  {
+    "id": "c08137bd-5824-4075-a6ab-7e556ea156d2",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:07:37.168Z"
+  },
+  {
+    "id": "37e67ee6-8805-4973-9a75-a64e7753fcc2",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:07:37.163Z"
+  },
+  {
+    "id": "f2f4894d-4373-41a7-91eb-2730989fa3ad",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:06:52.174Z"
+  },
+  {
+    "id": "2d8d97de-3cc6-47fa-9828-44ecf6d7af0a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:06:52.170Z"
+  },
+  {
+    "id": "1fafdbe0-af27-4558-838d-90fade18e707",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:06:07.168Z"
+  },
+  {
+    "id": "9cd67c8a-8420-495e-9f1b-8a1af322d7e8",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:06:07.162Z"
+  },
+  {
+    "id": "8a196f17-ac89-4b42-a69a-bebc932fb154",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.339Z"
+  },
+  {
+    "id": "13a3a3d5-9621-41f9-a810-f2ec77b6c9f0",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.336Z"
+  },
+  {
+    "id": "ff9abacc-6b5d-4a91-9c3a-cdb1373c47d6",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.331Z"
+  },
+  {
+    "id": "14114e5f-827f-481f-9f6e-352fb593b893",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.233Z"
+  },
+  {
+    "id": "afb5abff-3fe9-4d45-8f6d-d642c1c3ba0e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.228Z"
+  },
+  {
+    "id": "c2e87e14-ad13-425e-821d-b33f4455b945",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Guest Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:21.224Z"
+  },
+  {
+    "id": "317d282f-e746-47c9-90fe-36dcc4d55b90",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:16.169Z"
+  },
+  {
+    "id": "d604e819-699f-4d46-96e0-afe024a2995f",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:05:16.164Z"
+  },
+  {
+    "id": "a7f946d1-840f-48c3-9c14-564a42006716",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:04:31.208Z"
+  },
+  {
+    "id": "9c139915-c731-4f93-9c85-303b2be72720",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:04:31.171Z"
+  },
+  {
+    "id": "ffb3c7a8-f1c0-4190-9fa2-3bf27855fb8f",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:03:46.178Z"
+  },
+  {
+    "id": "7912aa10-38d3-4047-b95d-33df3a621563",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:03:46.166Z"
+  },
+  {
+    "id": "604d1b77-80ef-4527-82aa-5fa83f4cff1a",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:03:01.176Z"
+  },
+  {
+    "id": "579e78d0-de3f-44c8-92c7-39351e2048a0",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:03:01.168Z"
+  },
+  {
+    "id": "0c395cec-7851-4a92-b905-28e62ac86bf2",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:02:15.738Z"
+  },
+  {
+    "id": "b9f0e4f7-cadb-4ef1-b68d-f781f4a4843e",
+    "session_id": "v_z6nmcvrh",
+    "path": "/admin/dashboard",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "asif.ikbal",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:02:15.736Z"
+  },
+  {
+    "id": "6883b81c-1eb7-49d3-bf0d-5cdb539165fe",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:02:15.733Z"
+  },
+  {
+    "id": "1e77306f-3f3f-48f8-a28a-ecdfbffc7254",
+    "session_id": "v_4lqs57ma",
+    "path": "/help",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "demo_test",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:02:15.729Z"
+  },
+  {
+    "id": "51889b46-570d-41de-b3b9-326ce5221b38",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:01:56.260Z"
+  },
+  {
+    "id": "d63ade6d-ceac-4095-8a5e-111d033d01bb",
+    "session_id": "pub_f6h2q3w5",
+    "path": "/help-desk/open-ticket",
+    "ip": "127.0.0.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "user_name": "Website Visitor",
+    "role": "visitor",
+    "timestamp": "2026-10-18T10:01:56.246Z"
+  }
+]

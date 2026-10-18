@@ -1,0 +1,64 @@
+[
+  {
+    "id": "7b6054d2-c699-43c8-ac0a-e40b0706e095",
+    "username": "demo_test",
+    "full_name": "demo_test",
+    "email": "demo_test@users.ritorica.invalid",
+    "phone": "+8801800000000",
+    "avatar_url": "https://api.dicebear.com/7.x/bottts/svg?seed=agent1",
+    "department_id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+    "is_active": true,
+    "company_name": "Acme Enterprises",
+    "must_change_password": false,
+    "company_email": "mdasifikbal727@gmail.com",
+    "company_email_verified_at": "2026-10-18T04:43:29.112Z",
+    "created_at": "2026-10-18T03:40:13.654Z",
+    "last_login_at": null,
+    "roles": [
+      "customer"
+    ],
+    "password": "pbkdf2:584737cca36f7ee8e4bb94378d620c8e:ce0395111c4c4cb69d52cf130b3db2fe382994b63bac4a688e3df5c6931309699a301e1846c7201f42441eeea5f4ea9014626ccce3192632094d086b44d1a749",
+    "password_changed_at": "2026-10-18T05:11:47.348Z"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "username": "asif.ikbal",
+    "full_name": "Asif Ikbal (Admin)",
+    "email": "mdasifikbalmamun220@gmail.com",
+    "phone": "+8801805991950",
+    "avatar_url": null,
+    "department_id": "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+    "is_active": true,
+    "company_name": "Ritorica CPaaS",
+    "must_change_password": false,
+    "company_email": "mdasifikbalmamun220@gmail.com",
+    "company_email_verified_at": "2026-10-18T03:29:39.305Z",
+    "created_at": "2026-10-18T03:29:39.305Z",
+    "last_login_at": "2026-10-18T03:29:39.305Z",
+    "roles": [
+      "super_admin",
+      "admin"
+    ],
+    "password": "pbkdf2:80588827a742bce0d2036214e57fc5e4:30d33ce66a33ba7dcfb96dec9b2586edad165aad5b2e3cf4865957ee0a2b1e44e2a90b0f49297ec8d5fb44fd7f3f157a5057592710511bdbe726c584ac7d7452"
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "username": "agent",
+    "full_name": "Support Agent",
+    "email": "support.agent@ritorica.com.bd",
+    "phone": "+8801805991951",
+    "avatar_url": null,
+    "department_id": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+    "is_active": true,
+    "company_name": "Ritorica Support Team",
+    "must_change_password": false,
+    "company_email": "support.agent@ritorica.com.bd",
+    "company_email_verified_at": "2026-10-18T03:29:39.305Z",
+    "created_at": "2026-10-18T03:29:39.305Z",
+    "last_login_at": null,
+    "roles": [
+      "agent"
+    ],
+    "password": "pbkdf2:d0bf74279be337f1fbf2f2dab969da1d:5ff04c30b0ed726c7486e6df805d1142200732171ab34f9d695c12e151625aac759532ada8900c5f3617597f5f3250c337363776bb53b05ba6dfa0b5904285a8"
+  }
+]

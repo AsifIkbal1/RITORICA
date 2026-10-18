@@ -1,0 +1,214 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Ticket status tokens */
+  --color-st-unanswered: var(--st-unanswered);
+  --color-st-answered: var(--st-answered);
+  --color-st-awaiting: var(--st-awaiting);
+  --color-st-progress: var(--st-progress);
+  --color-st-solved: var(--st-solved);
+  --color-st-closed: var(--st-closed);
+  --color-st-reopened: var(--st-reopened);
+  /* Priority tokens */
+  --color-pr-low: var(--pr-low);
+  --color-pr-medium: var(--pr-medium);
+  --color-pr-high: var(--pr-high);
+  --color-pr-urgent: var(--pr-urgent);
+  /* Conversation */
+  --color-note: var(--note);
+  --color-note-foreground: var(--note-foreground);
+  --color-bubble-staff: var(--bubble-staff);
+  --color-bubble-customer: var(--bubble-customer);
+  --shadow-card: var(--shadow-card);
+  --shadow-elevated: var(--shadow-elevated);
+  --color-portal-agent: var(--portal-agent);
+  --color-chat-ai: var(--chat-ai);
+  --color-online: var(--online);
+  --color-away: var(--away);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.982 0.004 240);
+  --foreground: oklch(0.2 0.02 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.02 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.02 255);
+  --primary: oklch(0.42 0.11 230);
+  --primary-foreground: oklch(0.985 0.005 230);
+  --secondary: oklch(0.955 0.008 240);
+  --secondary-foreground: oklch(0.25 0.02 255);
+  --muted: oklch(0.955 0.006 240);
+  --muted-foreground: oklch(0.52 0.02 255);
+  --accent: oklch(0.94 0.025 225);
+  --accent-foreground: oklch(0.3 0.08 230);
+  --destructive: oklch(0.56 0.2 25);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.91 0.008 245);
+  --input: oklch(0.89 0.01 245);
+  --ring: oklch(0.55 0.11 230);
+  --chart-1: oklch(0.5 0.12 230);
+  --chart-2: oklch(0.65 0.13 175);
+  --chart-3: oklch(0.72 0.14 75);
+  --chart-4: oklch(0.6 0.17 30);
+  --chart-5: oklch(0.55 0.05 255);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.4 0.03 250);
+  --sidebar-primary: oklch(0.42 0.11 230);
+  --sidebar-primary-foreground: oklch(0.985 0.005 230);
+  --sidebar-accent: oklch(0.955 0.018 230);
+  --sidebar-accent-foreground: oklch(0.28 0.08 235);
+  --sidebar-border: oklch(0.91 0.008 245);
+  --sidebar-ring: oklch(0.55 0.11 230);
+
+  --st-unanswered: oklch(0.6 0.18 30);
+  --st-answered: oklch(0.55 0.12 230);
+  --st-awaiting: oklch(0.68 0.14 75);
+  --st-progress: oklch(0.55 0.15 280);
+  --st-solved: oklch(0.58 0.13 155);
+  --st-closed: oklch(0.55 0.015 255);
+  --st-reopened: oklch(0.6 0.17 350);
+
+  --pr-low: oklch(0.6 0.03 255);
+  --pr-medium: oklch(0.55 0.11 230);
+  --pr-high: oklch(0.66 0.16 60);
+  --pr-urgent: oklch(0.56 0.21 25);
+
+  --note: oklch(0.97 0.045 90);
+  --note-foreground: oklch(0.4 0.08 70);
+  --bubble-staff: oklch(0.965 0.02 225);
+  --bubble-customer: oklch(1 0 0);
+
+  --shadow-card: 0 1px 2px oklch(0.2 0.02 255 / 0.05), 0 1px 3px oklch(0.2 0.02 255 / 0.04);
+  --shadow-elevated: 0 8px 24px -8px oklch(0.2 0.02 255 / 0.18);
+  --portal-agent: oklch(0.5 0.1 175);
+  --chat-ai: oklch(0.52 0.16 295);
+  --online: oklch(0.62 0.16 150);
+  --away: oklch(0.75 0.15 75);
+}
+
+/* Role portals: all light; admin blue, agent teal tint, customer white. */
+[data-portal="agent"] {
+  --sidebar: oklch(0.99 0.006 185);
+  --sidebar-foreground: oklch(0.4 0.035 195);
+  --sidebar-primary: oklch(0.5 0.1 180);
+  --sidebar-primary-foreground: oklch(0.99 0.005 185);
+  --sidebar-accent: oklch(0.95 0.03 180);
+  --sidebar-accent-foreground: oklch(0.3 0.07 185);
+  --sidebar-border: oklch(0.91 0.015 185);
+  --sidebar-ring: oklch(0.5 0.1 180);
+}
+[data-portal="customer"] {
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.42 0.03 250);
+  --sidebar-primary: oklch(0.42 0.11 230);
+  --sidebar-primary-foreground: oklch(0.985 0.005 230);
+  --sidebar-accent: oklch(0.94 0.025 225);
+  --sidebar-accent-foreground: oklch(0.3 0.08 230);
+  --sidebar-border: oklch(0.91 0.008 245);
+  --sidebar-ring: oklch(0.55 0.11 230);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-background);
+    /* Brand line art (no QR code, border or text), fixed behind every page. */
+    background-image: url("./assets/brand-lines.svg");
+    background-repeat: no-repeat;
+    background-position: right -60px bottom -80px;
+    background-size: min(560px, 70vw) auto;
+    background-attachment: fixed;
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+@utility shadow-elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+/* Subtle, consistent interaction feedback (150-250ms). */
+@layer base {
+  a, button, [role="button"], [role="menuitem"], [data-slot="card"] {
+    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+    transition-duration: 180ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  }
+  button:not(:disabled):active, a:active { transform: scale(0.98); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+  }
+}
+@utility hover-lift {
+  transition: transform 200ms cubic-bezier(0.2,0,0,1), box-shadow 200ms cubic-bezier(0.2,0,0,1), border-color 200ms;
+  &:hover { transform: translateY(-2px); box-shadow: var(--shadow-elevated); border-color: color-mix(in oklch, var(--primary) 30%, var(--border)); }
+}
+
+/* Notification popup: countdown bar that pauses while hovered */
+@keyframes notif-toast-progress { from { width: 100%; } to { width: 0%; } }
+.notif-toast-progress { animation-name: notif-toast-progress; animation-timing-function: linear; animation-fill-mode: forwards; }
+.notif-toast:hover .notif-toast-progress { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .notif-toast-progress { animation: none; width: 0; } }

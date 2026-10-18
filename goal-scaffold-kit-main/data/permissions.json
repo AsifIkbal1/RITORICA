@@ -1,0 +1,90 @@
+[
+  {
+    "key": "tickets.view",
+    "description": "View tickets and conversation history"
+  },
+  {
+    "key": "tickets.create",
+    "description": "Submit new support tickets"
+  },
+  {
+    "key": "tickets.reply",
+    "description": "Reply to customer or agent ticket threads"
+  },
+  {
+    "key": "tickets.internal_note",
+    "description": "Add private staff-only internal notes"
+  },
+  {
+    "key": "tickets.assign",
+    "description": "Assign or reassign tickets to agents"
+  },
+  {
+    "key": "tickets.change_status",
+    "description": "Change ticket status (solved, closed, in progress, etc.)"
+  },
+  {
+    "key": "tickets.change_priority",
+    "description": "Change ticket priority (urgent, high, medium, low)"
+  },
+  {
+    "key": "tickets.change_department",
+    "description": "Reassign ticket department"
+  },
+  {
+    "key": "tickets.change_category",
+    "description": "Reassign ticket category"
+  },
+  {
+    "key": "tickets.edit",
+    "description": "Edit ticket subject and custom metadata"
+  },
+  {
+    "key": "tickets.delete",
+    "description": "Permanently delete tickets"
+  },
+  {
+    "key": "tickets.ai_draft",
+    "description": "Generate and use AI-assisted reply drafts"
+  },
+  {
+    "key": "customers.view",
+    "description": "View customer directory and accounts"
+  },
+  {
+    "key": "agents.view",
+    "description": "View and monitor support agent accounts"
+  },
+  {
+    "key": "departments.manage",
+    "description": "Create, edit, and organize departments"
+  },
+  {
+    "key": "categories.manage",
+    "description": "Create, edit, and organize ticket categories"
+  },
+  {
+    "key": "reports.view",
+    "description": "View analytics, ticket volume reports, and SLA metrics"
+  },
+  {
+    "key": "activity_logs.view",
+    "description": "Access audit trail and activity logs"
+  },
+  {
+    "key": "settings.manage",
+    "description": "Configure global helpdesk settings and custom fields"
+  },
+  {
+    "key": "users.manage",
+    "description": "Manage users, credentials, and access roles"
+  },
+  {
+    "key": "roles.manage",
+    "description": "Configure roles and permission matrices"
+  },
+  {
+    "key": "chat.manage",
+    "description": "Manage live chats, queue routing, and agent takeover"
+  }
+]

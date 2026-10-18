@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f1111111-1111-4111-8111-111111111111",
+    "question": "What should I do if my clients don't receive OTPs?",
+    "answer": "First, check the live SMS logs in your dashboard to inspect the delivery status and operator response code. If the status shows 'UNDELIV' or 'EXPIRED', ensure the mobile number is active and not on a DND register. For persistent carrier issues, submit a ticket under 'SMS Delivery & Routing' with sample numbers and timestamps.",
+    "sort_order": 1,
+    "is_published": true,
+    "created_at": "2026-10-18T00:00:00.000Z",
+    "updated_at": "2026-10-18T00:00:00.000Z"
+  },
+  {
+    "id": "f2222222-2222-4222-8222-222222222222",
+    "question": "How do I top up or recharge my account balance?",
+    "answer": "You can recharge your account balance via bKash, Nagad, Rocket, or direct bank transfer from the Billing section. Invoices and VAT receipts are automatically generated and downloadable instantly.",
+    "sort_order": 2,
+    "is_published": true,
+    "created_at": "2026-10-18T00:00:00.000Z",
+    "updated_at": "2026-10-18T00:00:00.000Z"
+  },
+  {
+    "id": "f3333333-3333-4333-8333-333333333333",
+    "question": "What are your support working hours?",
+    "answer": "Our technical support team and NOC operate 24/7/365 to handle urgent gateway outages, delivery degradations, and customer questions.",
+    "sort_order": 3,
+    "is_published": true,
+    "created_at": "2026-10-18T00:00:00.000Z",
+    "updated_at": "2026-10-18T00:00:00.000Z"
+  },
+  {
+    "id": "f4444444-4444-4444-8444-444444444444",
+    "question": "Where can I find my API Key and documentation?",
+    "answer": "You can generate and view your API keys under Settings -> API Credentials. Detailed API documentation with sample cURL, Python, PHP, and Node.js code snippets is available in the Developers section.",
+    "sort_order": 4,
+    "is_published": true,
+    "created_at": "2026-10-18T00:00:00.000Z",
+    "updated_at": "2026-10-18T00:00:00.000Z"
+  }
+]

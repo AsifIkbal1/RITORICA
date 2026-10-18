@@ -1,0 +1,150 @@
+[
+  {
+    "role": "admin",
+    "permission_key": "tickets.view"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.create"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.reply"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.internal_note"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.assign"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.change_status"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.change_priority"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.change_department"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.change_category"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.edit"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.delete"
+  },
+  {
+    "role": "admin",
+    "permission_key": "tickets.ai_draft"
+  },
+  {
+    "role": "admin",
+    "permission_key": "customers.view"
+  },
+  {
+    "role": "admin",
+    "permission_key": "agents.view"
+  },
+  {
+    "role": "admin",
+    "permission_key": "departments.manage"
+  },
+  {
+    "role": "admin",
+    "permission_key": "categories.manage"
+  },
+  {
+    "role": "admin",
+    "permission_key": "reports.view"
+  },
+  {
+    "role": "admin",
+    "permission_key": "activity_logs.view"
+  },
+  {
+    "role": "admin",
+    "permission_key": "settings.manage"
+  },
+  {
+    "role": "admin",
+    "permission_key": "users.manage"
+  },
+  {
+    "role": "admin",
+    "permission_key": "roles.manage"
+  },
+  {
+    "role": "admin",
+    "permission_key": "chat.manage"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.view"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.create"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.reply"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.internal_note"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.assign"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.change_status"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.change_priority"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.change_department"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.change_category"
+  },
+  {
+    "role": "agent",
+    "permission_key": "tickets.ai_draft"
+  },
+  {
+    "role": "agent",
+    "permission_key": "reports.view"
+  },
+  {
+    "role": "agent",
+    "permission_key": "chat.manage"
+  },
+  {
+    "role": "customer",
+    "permission_key": "tickets.view"
+  },
+  {
+    "role": "customer",
+    "permission_key": "tickets.create"
+  },
+  {
+    "role": "customer",
+    "permission_key": "tickets.reply"
+  }
+]

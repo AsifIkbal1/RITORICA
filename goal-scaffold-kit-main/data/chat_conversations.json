@@ -1,0 +1,40 @@
+[
+  {
+    "id": "e412736b-9091-4f75-a0db-aeeda0cb894d",
+    "customer_id": "7b6054d2-c699-43c8-ac0a-e40b0706e095",
+    "customer_name": "demo_test",
+    "customer_email": "demo_test@users.ritorica.invalid",
+    "assigned_agent_id": "00000000-0000-0000-0000-000000000001",
+    "agent_name": "asif.ikbal",
+    "status": "active",
+    "mode": "human",
+    "ticket_id": null,
+    "last_message": "Hi there! How can I help you today with our messaging products or any other question?",
+    "last_message_at": "2026-10-18T09:00:40.599Z",
+    "customer_last_read_at": "2026-10-18T09:00:38.643Z",
+    "staff_last_read_at": "2026-10-18T07:31:27.809Z",
+    "created_at": "2026-10-18T07:30:16.800Z",
+    "updated_at": "2026-10-18T09:00:40.599Z",
+    "closed_at": null,
+    "closed_by": null
+  },
+  {
+    "id": "aade1710-b995-4da1-8bc3-27b0d03a4ca9",
+    "customer_id": "00000000-0000-0000-0000-000000000002",
+    "customer_name": "demo test",
+    "customer_email": "demo@ritorica.com",
+    "assigned_agent_id": "00000000-0000-0000-0000-000000000001",
+    "agent_name": "Asif Ikbal",
+    "status": "waiting_for_customer",
+    "mode": "human",
+    "ticket_id": null,
+    "last_message": "Hello demo test, our telecom route team is actively checking this right now.",
+    "last_message_at": "2026-10-18T07:27:17.913Z",
+    "customer_last_read_at": "2026-10-18T07:27:17.909Z",
+    "staff_last_read_at": "2026-10-18T07:27:17.913Z",
+    "created_at": "2026-10-18T07:27:17.905Z",
+    "updated_at": "2026-10-18T07:27:17.913Z",
+    "closed_at": null,
+    "closed_by": null
+  }
+]

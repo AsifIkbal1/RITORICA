@@ -1,0 +1,20 @@
+[
+  {
+    "id": "8cdaa044-e8c4-41a8-98f4-94ff13fc0bda",
+    "conversation_id": "e412736b-9091-4f75-a0db-aeeda0cb894d",
+    "status": "success",
+    "customer_message": "hi",
+    "ai_reply": "Hi there! How can I help you today with our messaging products or any other question?",
+    "latency_ms": 1947,
+    "created_at": "2026-10-18T09:00:40.611Z"
+  },
+  {
+    "id": "01fae18c-018a-49ab-8206-3fc3056b6f45",
+    "conversation_id": "e412736b-9091-4f75-a0db-aeeda0cb894d",
+    "status": "error",
+    "customer_message": "hi",
+    "error": "The requested webhook \"website-chat\" is not registered. (Click the 'Execute workflow' button on the canvas, then try again. (In test mode, the webhook only works for one call after you click this button))",
+    "latency_ms": 599,
+    "created_at": "2026-10-18T09:00:12.054Z"
+  }
+]

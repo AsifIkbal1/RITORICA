@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791703957045,
+      "tag": "0000_verified_company_email_and_setup_enforcement",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791704300080,
+      "tag": "0001_restore_new_user_trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791712430481,
+      "tag": "0002_restrict_settings_and_permission_reads",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791975212212,
+      "tag": "0003_restore_realtime_publication",
+      "breakpoints": true
+    }
+  ]
+}

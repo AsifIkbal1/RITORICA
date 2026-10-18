@@ -1,0 +1,29 @@
+[
+  {
+    "id": "5a47b46b-9d75-4577-94ec-70141e6c60e1",
+    "ticket_id": "4aca7789-f61f-49d9-847b-7a633ee41b01",
+    "sender_id": "00000000-0000-0000-0000-000000000001",
+    "sender_name": "asif.ikbal",
+    "message": "hlw sir..",
+    "message_type": "agent_reply",
+    "created_at": "2026-10-18T07:05:38.634Z"
+  },
+  {
+    "id": "058070f2-d61a-47e9-b1d3-fa7ef5c80e91",
+    "ticket_id": "4aca7789-f61f-49d9-847b-7a633ee41b01",
+    "sender_id": "7b6054d2-c699-43c8-ac0a-e40b0706e095",
+    "sender_name": "Customer",
+    "message": "please solve the issue ASAP",
+    "message_type": "customer_reply",
+    "created_at": "2026-10-18T07:06:13.099Z"
+  },
+  {
+    "id": "34e429e7-65ef-4a6a-b931-6c8353c8d8ef",
+    "ticket_id": "4aca7789-f61f-49d9-847b-7a633ee41b01",
+    "sender_id": "00000000-0000-0000-0000-000000000001",
+    "sender_name": "asif.ikbal",
+    "message": "we are working on it, give us some time",
+    "message_type": "agent_reply",
+    "created_at": "2026-10-18T07:06:32.849Z"
+  }
+]

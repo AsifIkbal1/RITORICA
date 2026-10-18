@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" fill="none" stroke="#1a5fae" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" opacity="0.42">
+  <!-- tilted frame -->
+  <rect x="210" y="-60" width="420" height="230" rx="34" transform="rotate(18 420 55)"/>
+  <!-- speech bubble with three dots -->
+  <path d="M210 250c0-30 24-54 54-54h150c30 0 54 24 54 54v24c0 30-24 54-54 54H300l-46 40 10-40h0c-30 0-54-24-54-54z" transform="rotate(-24 340 290)"/>
+  <circle cx="290" cy="300" r="15" transform="rotate(-24 340 290)"/>
+  <circle cx="340" cy="270" r="15" transform="rotate(-24 340 290)"/>
+  <circle cx="390" cy="240" r="15" transform="rotate(-24 340 290)"/>
+  <!-- tall rounded frame -->
+  <rect x="470" y="150" width="200" height="300" rx="28" transform="rotate(-10 570 300)"/>
+  <!-- letter r outline -->
+  <path d="M250 420h44v30c18-26 40-38 70-38h14v46h-18c-38 0-62 20-62 62v118h-48z" transform="rotate(-22 310 520)"/>
+  <!-- device frames -->
+  <rect x="300" y="620" width="300" height="420" rx="30"/>
+  <rect x="330" y="650" width="110" height="80" rx="12"/>
+  <rect x="456" y="650" width="110" height="80" rx="12"/>
+  <rect x="330" y="746" width="80" height="70" rx="12"/>
+  <rect x="426" y="760" width="56" height="48" rx="10"/>
+  <rect x="330" y="832" width="236" height="150" rx="18"/>
+  <rect x="60" y="560" width="200" height="140" rx="26" transform="rotate(14 160 630)"/>
+</svg>
