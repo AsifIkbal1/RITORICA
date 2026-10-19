@@ -8,6 +8,14 @@ import {
   getLocalTicketMessages,
   getAllLocalTicketMessages,
   addLocalTicketMessage,
+  submitLocalCsat,
+  escalateLocalTicket,
+  mergeLocalTickets,
+  addTicketTag,
+  removeTicketTag,
+  snoozeLocalTicket,
+  unsnoozeLocalTicket,
+  getOrComputeTicketSentiment,
   type TicketRecord,
 } from "./tickets.server";
 import { getLookupsServer } from "./lookups.server";
@@ -975,4 +983,241 @@ export const getAgentDetailsFn = createServerFn({ method: "POST" })
       },
     };
   });
+
+export const submitCsatRatingFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      ticket_id: z.string(),
+      rating: z.number().int().min(1).max(5),
+      comment: z.string().max(1000).optional(),
+      customer_name: z.string().optional(),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase
+        .from("tickets")
+        .update({
+          custom_fields: {
+            csat_rating: data.rating,
+            csat_comment: data.comment || "",
+            csat_submitted_at: new Date().toISOString(),
+          },
+        } as any)
+        .eq("id", data.ticket_id);
+    } catch {}
+
+    const updated = submitLocalCsat(data.ticket_id, data.rating, data.comment);
+
+    try {
+      const { recordActivityLog } = await import("./activity-logs.server");
+      recordActivityLog({
+        userId: "customer",
+        userName: data.customer_name || "Customer",
+        action: "ticket.csat_submitted",
+        entityType: "ticket",
+        entityId: data.ticket_id,
+        description: `Customer submitted ${data.rating}/5 CSAT feedback: "${data.comment || "No comment"}"`,
+        metadata: { rating: data.rating, comment: data.comment },
+      });
+    } catch {}
+
+    try {
+      const { createLocalNotification } = await import("./notifications.server");
+      createLocalNotification({
+        user_id: "00000000-0000-0000-0000-000000000001",
+        target_role: "admin",
+        type: "ticket",
+        title: `CSAT Rating: ${data.rating}/5 Stars`,
+        message: `${data.customer_name || "Customer"} rated ticket #${updated?.ticket_number || data.ticket_id}: ${data.rating}/5 stars.`,
+        ticket_id: data.ticket_id,
+        chat_id: null,
+      });
+    } catch {}
+
+    return { success: true, ticket: updated };
+  });
+
+export const escalateTicketFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      ticket_id: z.string(),
+      reason: z.string().optional(),
+      escalated_by: z.string().optional(),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    const updated = escalateLocalTicket(data.ticket_id);
+    if (!updated) throw new Error("Ticket not found");
+
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase
+        .from("tickets")
+        .update({
+          priority: "urgent" as any,
+          assigned_agent_id: "00000000-0000-0000-0000-000000000001",
+        })
+        .eq("id", data.ticket_id);
+    } catch {}
+
+    // Add system message
+    addLocalTicketMessage({
+      ticket_id: data.ticket_id,
+      sender_id: "00000000-0000-0000-0000-000000000001",
+      sender_name: "SLA Escalation Engine",
+      message: `🚨 ESCALATION NOTICE: Ticket #${updated.ticket_number} has been escalated to L1 Urgent priority by ${data.escalated_by || "SLA Engine"}. Reason: ${data.reason || "SLA Target Breach Prevention / Customer Escalation"}. Reassigned to Super Admin team.`,
+      message_type: "internal_note",
+    });
+
+    try {
+      const { recordActivityLog } = await import("./activity-logs.server");
+      recordActivityLog({
+        userId: "system",
+        userName: data.escalated_by || "Support Staff",
+        action: "ticket.escalated",
+        entityType: "ticket",
+        entityId: data.ticket_id,
+        description: `Escalated ticket #${updated.ticket_number} to L1 Urgent priority.`,
+        metadata: { ticket_number: updated.ticket_number, reason: data.reason },
+      });
+    } catch {}
+
+    try {
+      const { createLocalNotification } = await import("./notifications.server");
+      createLocalNotification({
+        user_id: "00000000-0000-0000-0000-000000000001",
+        target_role: "admin",
+        type: "ticket",
+        title: `🚨 Urgent Escalation: #${updated.ticket_number}`,
+        message: `Ticket #${updated.ticket_number} was escalated to L1 Urgent! Assigned to Super Admin.`,
+        ticket_id: data.ticket_id,
+        chat_id: null,
+      });
+    } catch {}
+
+    return { success: true, ticket: updated };
+  });
+
+export const mergeTicketsFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      source_ticket_id: z.string(),
+      target_ticket_id: z.string(),
+      merged_by: z.string().optional(),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    if (data.source_ticket_id === data.target_ticket_id) {
+      throw new Error("Cannot merge a ticket into itself.");
+    }
+
+    const res = mergeLocalTickets(data.source_ticket_id, data.target_ticket_id, data.merged_by);
+    if (!res) throw new Error("One or both tickets could not be found.");
+
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase
+        .from("tickets")
+        .update({
+          status: "closed" as any,
+          subject: res.source.subject,
+        })
+        .eq("id", data.source_ticket_id);
+    } catch {}
+
+    try {
+      const { recordActivityLog } = await import("./activity-logs.server");
+      recordActivityLog({
+        userId: "system",
+        userName: data.merged_by || "Support Agent",
+        action: "ticket.merged",
+        entityType: "ticket",
+        entityId: data.target_ticket_id,
+        description: `Merged ticket #${res.source.ticket_number} into #${res.target.ticket_number}`,
+        metadata: {
+          source_ticket_number: res.source.ticket_number,
+          target_ticket_number: res.target.ticket_number,
+        },
+      });
+    } catch {}
+
+    return {
+      success: true,
+      source: res.source,
+      target: res.target,
+    };
+  });
+
+export const addTicketTagFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      ticket_id: z.string(),
+      tag: z.string().min(1).max(50),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    const updated = addTicketTag(data.ticket_id, data.tag);
+    if (!updated) throw new Error("Ticket not found");
+    return { success: true, ticket: updated };
+  });
+
+export const removeTicketTagFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      ticket_id: z.string(),
+      tag: z.string(),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    const updated = removeTicketTag(data.ticket_id, data.tag);
+    if (!updated) throw new Error("Ticket not found");
+    return { success: true, ticket: updated };
+  });
+
+export const snoozeTicketFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) =>
+    z.object({
+      ticket_id: z.string(),
+      until_iso: z.string(),
+      reason: z.string().optional(),
+      snoozed_by: z.string().optional(),
+    }).parse(d),
+  )
+  .handler(async ({ data }) => {
+    const updated = snoozeLocalTicket(data.ticket_id, data.until_iso, data.reason);
+    if (!updated) throw new Error("Ticket not found");
+
+    try {
+      const { recordActivityLog } = await import("./activity-logs.server");
+      recordActivityLog({
+        userId: "system",
+        userName: data.snoozed_by || "Support Agent",
+        action: "ticket.snoozed",
+        entityType: "ticket",
+        entityId: data.ticket_id,
+        description: `Snoozed ticket #${updated.ticket_number} until ${data.until_iso} (Reason: ${data.reason || "Waiting"})`,
+        metadata: { snoozed_until: data.until_iso, reason: data.reason },
+      });
+    } catch {}
+
+    return { success: true, ticket: updated };
+  });
+
+export const unsnoozeTicketFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) => z.object({ ticket_id: z.string() }).parse(d))
+  .handler(async ({ data }) => {
+    const updated = unsnoozeLocalTicket(data.ticket_id);
+    if (!updated) throw new Error("Ticket not found");
+    return { success: true, ticket: updated };
+  });
+
+export const getTicketSentimentFn = createServerFn({ method: "POST" })
+  .validator((d: unknown) => z.object({ ticket_id: z.string() }).parse(d))
+  .handler(async ({ data }) => {
+    const result = getOrComputeTicketSentiment(data.ticket_id);
+    return { success: true, sentiment: result };
+  });
+
 

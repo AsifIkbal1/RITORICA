@@ -5,7 +5,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { format, formatDistanceToNow } from "date-fns";
 import { toast } from "sonner";
 import {
-  ArrowLeft, Download, Eye, FileText, Loader2, Lock, Mail, Phone, Send, StickyNote, Trash2, User, History, Sparkles, X, ChevronUp, Bot, RotateCcw,
+  ArrowLeft, Download, Eye, FileText, Loader2, Lock, Mail, Phone, Send, StickyNote, Trash2, User, History, Sparkles, X, ChevronUp, Bot, RotateCcw, Printer,
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
@@ -21,9 +21,19 @@ import {
   deleteTicketFn,
   getTicketMessagesFn,
   reclassifyTicketPriorityFn,
+  escalateTicketFn,
 } from "@/lib/tickets.functions";
 import type { AiClassificationResult } from "@/lib/ai-priority-classifier.server";
 import { AiDraftPanel } from "@/components/ai-draft-panel";
+import { SlaCountdownBar } from "@/components/sla-indicator";
+import { CannedResponsePicker } from "@/components/canned-response-picker";
+import { CsatSurveyCard, CompactCsatScore } from "@/components/csat-survey";
+import { CollisionBanner } from "@/components/collision-banner";
+import { TicketProgressTracker } from "@/components/ticket-progress-tracker";
+import { MergeTicketDialog } from "@/components/merge-ticket-dialog";
+import { SentimentCard, CompactSentimentBadge } from "@/components/sentiment-card";
+import { TicketTags } from "@/components/ticket-tags";
+import { TicketSnoozeDialog } from "@/components/ticket-snooze-dialog";
 import { TicketExtras } from "@/components/ticket-extras";
 import { StatusBadge, PriorityBadge, TicketId } from "@/components/badges";
 import { ErrorState, EmptyState } from "@/components/states";
@@ -214,20 +224,77 @@ function TicketPage() {
 
   const { ticket: t, messages, hasMore, attachments, activity, people, roleOf } = q.data;
   const agent = t.assigned_agent_id ? people.get(t.assigned_agent_id) : null;
+  const { profile } = useAuth();
+
+  async function handleEscalate() {
+    if (!confirm(`Are you sure you want to escalate ticket #${t.ticket_number} to L1 Urgent priority?`)) return;
+    try {
+      await escalateTicketFn({
+        data: {
+          ticket_id: t.id,
+          reason: "Manual SLA Escalation to L1 Urgent",
+          escalated_by: profile?.full_name || "Support Staff",
+        },
+      });
+      toast.success(`Ticket #${t.ticket_number} escalated to L1 Urgent!`);
+      q.refetch();
+    } catch (err: any) {
+      toast.error(err.message || "Failed to escalate ticket.");
+    }
+  }
 
   return (
-    <div className="mx-auto max-w-7xl">
-      <Link to="/tickets" className="mb-3 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
+    <div className="mx-auto max-w-7xl space-y-4">
+      <Link to="/tickets" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
         <ArrowLeft className="size-4" /> All tickets
       </Link>
-      <div className="mb-5 rounded-lg border bg-card p-5 shadow-card">
-        <div className="flex flex-wrap items-center gap-2">
-          <TicketId value={t.ticket_number} />
-          <StatusBadge status={t.status} />
-          <PriorityBadge priority={t.priority} />
+
+      {/* Collision Detection Banner (Staff only) */}
+      {isStaff && <CollisionBanner ticketId={t.id} />}
+
+      <div className="rounded-lg border bg-card p-5 shadow-card space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <TicketId value={t.ticket_number} />
+            <StatusBadge status={t.status} />
+            <PriorityBadge priority={t.priority} />
+            <CompactCsatScore rating={t.csat_rating} />
+            <CompactSentimentBadge sentiment={t.sentiment} />
+          </div>
+
+          <div className="flex items-center gap-2">
+            {isStaff && <TicketSnoozeDialog ticket={t} onSnoozed={() => q.refetch()} />}
+            {isStaff && (
+              <MergeTicketDialog
+                currentTicket={{
+                  id: t.id,
+                  ticket_number: t.ticket_number,
+                  subject: t.subject,
+                  customer_id: t.customer_id,
+                  customer_name: t.customer_name,
+                }}
+                onMerged={() => q.refetch()}
+              />
+            )}
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="h-8 gap-1.5 text-xs text-muted-foreground hover:text-foreground"
+              onClick={() => window.print()}
+            >
+              <Printer className="size-3.5" />
+              <span>Print / PDF</span>
+            </Button>
+          </div>
         </div>
-        <h1 className="mt-2 text-xl font-semibold sm:text-2xl">{t.subject}</h1>
-        <dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-xs sm:grid-cols-3 lg:grid-cols-6">
+
+        <div className="space-y-1.5">
+          <h1 className="text-xl font-semibold sm:text-2xl">{t.subject}</h1>
+          <TicketTags ticketId={t.id} tags={t.tags || []} isStaff={isStaff} onChange={() => q.refetch()} />
+        </div>
+
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-2 text-xs sm:grid-cols-3 lg:grid-cols-6 border-y py-3">
           {[
             ["Customer", t.customer_name],
             ["Assigned agent", agent?.full_name ?? (t.assigned_agent_id ? "Support Team" : "Unassigned")],
@@ -242,27 +309,39 @@ function TicketPage() {
             </div>
           ))}
         </dl>
-        {(() => {
-          const lvl = t.sla_level ? SLA_LEVELS[t.sla_level] : undefined;
-          if (!lvl) return null;
-          return (
-            <p className="mt-3 rounded-md bg-muted/60 px-3 py-2 text-xs text-muted-foreground">
-              <span className="font-semibold text-foreground">{lvl.name}</span> — {lvl.meaning}.
-              {" "}Response within {lvl.response}
-              {t.response_due_at && <> (by {format(new Date(t.response_due_at), "MMM d, HH:mm")})</>}
-              {" "}· Target resolution {lvl.resolution}.
-            </p>
-          );
-        })()}
+
+        {/* Live SLA Countdown & Auto-Escalation Bar */}
+        <SlaCountdownBar
+          ticket={{
+            id: t.id,
+            priority: t.priority,
+            status: t.status,
+            created_at: t.created_at,
+            ticket_number: t.ticket_number,
+          }}
+          isStaff={isStaff}
+          onEscalate={handleEscalate}
+        />
+
+        {/* Visual Customer Workflow Progress Tracker */}
+        <TicketProgressTracker
+          status={t.status}
+          isAssigned={!!t.assigned_agent_id}
+          isCustomer={!isStaff}
+        />
       </div>
 
       <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
         <div className="min-w-0 space-y-4">
+          {/* Customer Satisfaction Feedback Prompt / Score */}
+          <CsatSurveyCard ticket={t} isStaff={isStaff} onRated={() => q.refetch()} />
+
           <Conversation t={t} messages={messages} attachments={attachments} people={people} roleOf={roleOf} onChange={() => q.refetch()}
             hasMore={hasMore} loadingMore={q.isFetching} onLoadMore={() => setLimit((l) => l + PAGE)} />
-          <ReplyBox ticketId={t.id} status={t.status} seedQuery={`${t.subject}\n${t.description}`.slice(0, 1000)} onSent={() => q.refetch()} />
+          <ReplyBox ticket={t} ticketId={t.id} status={t.status} seedQuery={`${t.subject}\n${t.description}`.slice(0, 1000)} onSent={() => q.refetch()} />
         </div>
         <aside className="space-y-4">
+          {isStaff && <SentimentCard sentiment={t.sentiment} />}
           {isStaff && <AiClassificationCard ticket={t} onClassified={() => q.refetch()} />}
           {isStaff && <TicketControls t={t} onChange={() => q.refetch()} />}
           {isStaff && (
@@ -442,7 +521,7 @@ function AttachmentList({ files, onChange }: { files: Attachment[]; onChange: ()
   );
 }
 
-function ReplyBox({ ticketId, status, seedQuery, onSent }: { ticketId: string; status: TicketStatus; seedQuery: string; onSent: () => void }) {
+function ReplyBox({ ticket, ticketId, status, seedQuery, onSent }: { ticket?: any; ticketId: string; status: TicketStatus; seedQuery: string; onSent: () => void }) {
   const { session, isStaff, can } = useAuth();
   const qc = useQueryClient();
   const [text, setText] = useState("");
@@ -453,6 +532,7 @@ function ReplyBox({ ticketId, status, seedQuery, onSent }: { ticketId: string; s
   const [aiOpen, setAiOpen] = useState(false);
   const [aiDraft, setAiDraft] = useState<{ id: string; content: string } | null>(null);
   const canAi = isStaff && can("tickets.ai_draft");
+  const isTyping = text.trim().length > 0;
 
   async function send(kind: "reply" | "note") {
     if (!session) return;
@@ -462,7 +542,7 @@ function ReplyBox({ ticketId, status, seedQuery, onSent }: { ticketId: string; s
     setBusy(kind);
     try {
       const type = kind === "note" ? "internal_note" : isStaff ? "agent_reply" : "customer_reply";
-      const senderName = isStaff ? (session.user.user_metadata?.full_name || "Support") : "Customer";
+      const senderName = isStaff ? ((session.user.user_metadata as any)?.full_name || "Support") : "Customer";
       
       const res = await sendTicketMessageFn({
         data: {
@@ -526,6 +606,13 @@ function ReplyBox({ ticketId, status, seedQuery, onSent }: { ticketId: string; s
   return (
     <Card className="shadow-card">
       <CardContent className="space-y-3 pt-5">
+        {/* Dynamic Collision Indicator when typing */}
+        {isStaff && isTyping && (
+          <div className="text-[11px] text-muted-foreground flex items-center gap-1.5 italic">
+            <span className="size-2 rounded-full bg-amber-500 animate-pulse" />
+            Your draft is active. Other team members are notified that you are currently replying.
+          </div>
+        )}
         {!isStaff && (status === "solved" || status === "closed") && (
           <p className="rounded-md bg-muted px-3 py-2 text-xs text-muted-foreground">This ticket is {status}. Replying will reopen it.</p>
         )}
@@ -544,10 +631,23 @@ function ReplyBox({ ticketId, status, seedQuery, onSent }: { ticketId: string; s
             <button className="ml-auto inline-flex items-center gap-1 text-muted-foreground hover:text-destructive" onClick={() => { setAiDraft(null); setText(""); }}><X className="size-3.5" /> Discard</button>
           </div>
         )}
-        <Textarea rows={aiDraft ? 10 : 5} value={text} onChange={(e) => setText(e.target.value)} placeholder={isStaff ? "Write a reply to the customer, or an internal note for the team…" : "Write a reply…"} />
+        <Textarea rows={aiDraft ? 10 : 5} value={text} onChange={(e) => setText(e.target.value)} placeholder={isStaff ? "Write a reply to the customer, or an internal note for the team… (use Quick Replies for instant macros)" : "Write a reply…"} />
         <div className="flex flex-wrap items-end justify-between gap-3">
           <FilePicker files={files} onChange={setFiles} states={uploads} disabled={!!busy} />
           <div className="flex flex-wrap items-center gap-2">
+            {isStaff && (
+              <CannedResponsePicker
+                ticket={{
+                  ticket_number: ticket?.ticket_number,
+                  subject: ticket?.subject,
+                  customer_name: ticket?.customer_name,
+                }}
+                agentName={(session?.user.user_metadata as any)?.full_name || "Support Staff"}
+                onSelect={(inserted) =>
+                  setText((prev) => (prev ? `${prev}\n\n${inserted}` : inserted))
+                }
+              />
+            )}
             {canAi && !aiOpen && (
               <Button variant="outline" className="border-chat-ai/40 text-chat-ai hover:text-chat-ai" onClick={() => setAiOpen(true)}>
                 <Sparkles className="size-4" /> Draft Reply with AI
@@ -710,14 +810,14 @@ function TicketControls({ t, onChange }: {
   t: { id: string; ticket_number: string; status: TicketStatus; priority: TicketPriority; category_id: string | null; department_id: string | null; assigned_agent_id: string | null };
   onChange: () => void;
 }) {
-  const { can, profile } = useAuth();
+  const { can, profile, isStaff, portal } = useAuth();
   const cats = useCategories();
   const deps = useDepartments();
   const staff = useStaff();
   const qc = useQueryClient();
   const nav = useNavigate();
   const NONE = "__none";
-  const isCustomer = profile?.roles?.includes("customer");
+  const isCustomer = !isStaff;
 
   async function update(patch: Partial<Database["public"]["Tables"]["tickets"]["Update"]>, msg: string) {
     try {
@@ -729,7 +829,7 @@ function TicketControls({ t, onChange }: {
           assigned_agent_id: patch.assigned_agent_id,
           department_id: patch.department_id,
           category_id: patch.category_id,
-          caller_role: profile?.roles?.[0] || "visitor",
+          caller_role: portal || "visitor",
         },
       });
       toast.success(msg);

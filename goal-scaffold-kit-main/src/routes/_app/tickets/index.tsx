@@ -3,17 +3,24 @@ import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { z } from "zod";
 import { format, formatDistanceToNow } from "date-fns";
-import { PlusCircle, Search, X, ChevronLeft, ChevronRight, Eye, Settings2 } from "lucide-react";
+import { PlusCircle, Search, X, ChevronLeft, ChevronRight, Eye, Settings2, Download, Moon } from "lucide-react";
+import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { STATUSES, PRIORITIES, type TicketStatus, type TicketPriority } from "@/lib/constants";
 import { useCategories, useDepartments, useStaff } from "@/lib/lookups";
 import { getTicketsListFn } from "@/lib/tickets.functions";
+import { exportTicketsToCsv } from "@/lib/export-tickets";
 import { PageHeader, EmptyState, ErrorState, TableSkeleton } from "@/components/states";
 import { StatusBadge, PriorityBadge, TicketId } from "@/components/badges";
+import { CompactSlaBadge } from "@/components/sla-indicator";
+import { CompactCsatScore } from "@/components/csat-survey";
+import { CompactSentimentBadge } from "@/components/sentiment-card";
+import { getTagColor } from "@/components/ticket-tags";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectSeparator, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
   q: z.string().optional(),
@@ -120,6 +127,10 @@ function TicketsPage() {
             created_at: l.created_at,
             updated_at: l.updated_at,
             last_activity_at: l.updated_at,
+            csat_rating: l.csat_rating,
+            tags: l.tags || [],
+            snoozed_until: l.snoozed_until,
+            sentiment: l.sentiment,
             total_count: rpcData.length + localList.length,
           }));
           const existingIds = new Set(rpcData.map((r) => r.id));
@@ -234,6 +245,19 @@ function TicketsPage() {
               <X className="size-4" /> Clear filters
             </Button>
           )}
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="h-9 gap-1.5 text-xs font-semibold ml-auto"
+            onClick={() => {
+              if (!rows.length) return void toast.info("No tickets to export.");
+              exportTicketsToCsv(rows);
+              toast.success(`Exported ${rows.length} tickets to CSV.`);
+            }}
+          >
+            <Download className="size-3.5" /> Export CSV
+          </Button>
         </div>
       </div>
 
@@ -260,6 +284,7 @@ function TicketsPage() {
                   {isStaff && <th className="hidden px-3 py-2.5 text-left font-medium lg:table-cell">Agent</th>}
                   <th className="px-3 py-2.5 text-left font-medium">Status</th>
                   <th className="px-3 py-2.5 text-left font-medium">Priority</th>
+                  <th className="px-3 py-2.5 text-left font-medium">SLA Target</th>
                   <th className="hidden px-3 py-2.5 text-left font-medium md:table-cell">Created</th>
                   <th className="hidden px-3 py-2.5 text-left font-medium xl:table-cell">Updated</th>
                   <th className="hidden px-3 py-2.5 text-left font-medium lg:table-cell">Last activity</th>
@@ -271,7 +296,28 @@ function TicketsPage() {
                   <tr key={t.id} className="border-b last:border-0 hover:bg-muted/40">
                     <td className="px-4 py-2.5"><Link to="/tickets/$id" params={{ id: t.id }}><TicketId value={t.ticket_number} /></Link></td>
                     <td className="max-w-72 px-3 py-2.5">
-                      <Link to="/tickets/$id" params={{ id: t.id }} className="line-clamp-1 font-medium hover:text-primary">{t.subject}</Link>
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <Link to="/tickets/$id" params={{ id: t.id }} className="line-clamp-1 font-medium hover:text-primary">
+                          {t.subject}
+                        </Link>
+                        {t.snoozed_until && new Date(t.snoozed_until).getTime() > Date.now() && (
+                          <span className="inline-flex items-center gap-0.5 rounded bg-indigo-500/15 px-1 py-0.5 text-[10px] font-semibold text-indigo-700 dark:text-indigo-300">
+                            <Moon className="size-2.5" /> Snoozed
+                          </span>
+                        )}
+                      </div>
+                      {t.tags && t.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {t.tags.slice(0, 3).map((tag: string) => (
+                            <span key={tag} className={cn("text-[10px] rounded px-1 py-0.2 border font-medium", getTagColor(tag))}>
+                              #{tag}
+                            </span>
+                          ))}
+                          {t.tags.length > 3 && (
+                            <span className="text-[10px] text-muted-foreground">+{t.tags.length - 3}</span>
+                          )}
+                        </div>
+                      )}
                     </td>
                     {isStaff && (
                       <td className="px-3 py-2.5">
@@ -285,6 +331,13 @@ function TicketsPage() {
                     {isStaff && <td className="hidden px-3 py-2.5 lg:table-cell">{t.agent_name ?? <span className="text-xs text-muted-foreground">Unassigned</span>}</td>}
                     <td className="px-3 py-2.5"><StatusBadge status={t.status} /></td>
                     <td className="px-3 py-2.5"><PriorityBadge priority={t.priority} /></td>
+                    <td className="px-3 py-2.5 whitespace-nowrap">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <CompactSlaBadge ticket={t} />
+                        {t.csat_rating && <CompactCsatScore rating={t.csat_rating} />}
+                        <CompactSentimentBadge sentiment={t.sentiment} />
+                      </div>
+                    </td>
                     <td className="hidden whitespace-nowrap px-3 py-2.5 text-xs text-muted-foreground md:table-cell">{format(new Date(t.created_at), "MMM d, yyyy")}</td>
                     <td className="hidden whitespace-nowrap px-3 py-2.5 text-xs text-muted-foreground xl:table-cell">{format(new Date(t.updated_at), "MMM d, HH:mm")}</td>
                     <td className="hidden whitespace-nowrap px-3 py-2.5 text-xs text-muted-foreground lg:table-cell">{formatDistanceToNow(new Date(t.last_activity_at), { addSuffix: true })}</td>

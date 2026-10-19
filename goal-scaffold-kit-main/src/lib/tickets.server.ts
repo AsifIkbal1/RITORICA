@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import type { AiClassificationResult } from "./ai-priority-classifier.server";
+import { analyzeCustomerSentiment, type SentimentAnalysisResult } from "./sentiment-analyzer.server";
 
 export type TicketRecord = {
   id: string;
@@ -21,6 +22,15 @@ export type TicketRecord = {
   ai_classification?: AiClassificationResult | null;
   created_at: string;
   updated_at: string;
+  csat_rating?: number | null;
+  csat_comment?: string | null;
+  csat_submitted_at?: string | null;
+  escalated?: boolean;
+  escalated_at?: string;
+  tags?: string[];
+  snoozed_until?: string | null;
+  snooze_reason?: string | null;
+  sentiment?: SentimentAnalysisResult | null;
 };
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
@@ -74,6 +84,8 @@ export function createLocalTicket(params: {
     (params.ai_classification?.incident_priority !== "UNDETERMINED" ? params.ai_classification?.incident_priority : null) ||
     "medium";
 
+  const sentiment = analyzeCustomerSentiment(`${params.subject}\n${params.description}`);
+
   const newTicket: TicketRecord = {
     id: crypto.randomUUID(),
     ticket_number: ticketNumber,
@@ -87,6 +99,8 @@ export function createLocalTicket(params: {
     priority: autoPriority,
     custom_fields: params.custom_fields || {},
     ai_classification: params.ai_classification || null,
+    sentiment,
+    tags: [],
     created_at: now,
     updated_at: now,
   };
@@ -187,3 +201,191 @@ export function addLocalTicketMessage(params: {
   }
   return newMsg;
 }
+
+export function submitLocalCsat(ticketId: string, rating: number, comment?: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  tickets[idx] = {
+    ...tickets[idx],
+    csat_rating: Math.min(5, Math.max(1, rating)),
+    csat_comment: comment || null,
+    csat_submitted_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  };
+
+  saveLocalTickets(tickets);
+  return tickets[idx];
+}
+
+export function escalateLocalTicket(ticketId: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  tickets[idx] = {
+    ...tickets[idx],
+    priority: "urgent",
+    escalated: true,
+    escalated_at: new Date().toISOString(),
+    assigned_agent_id: "00000000-0000-0000-0000-000000000001", // Super Admin
+    updated_at: new Date().toISOString(),
+  };
+
+  saveLocalTickets(tickets);
+  return tickets[idx];
+}
+
+export function mergeLocalTickets(
+  sourceTicketId: string,
+  targetTicketId: string,
+  mergedBy?: string
+): { source: TicketRecord; target: TicketRecord } | null {
+  const tickets = getLocalTickets();
+  const sIdx = tickets.findIndex((t) => t.id === sourceTicketId);
+  const tIdx = tickets.findIndex((t) => t.id === targetTicketId);
+  if (sIdx === -1 || tIdx === -1) return null;
+
+  const source = tickets[sIdx];
+  const target = tickets[tIdx];
+
+  // 1. Move messages from source to target
+  try {
+    if (fs.existsSync(MSGS_FILE)) {
+      const allMsgs = JSON.parse(fs.readFileSync(MSGS_FILE, "utf-8")) as TicketMessageRecord[];
+      const updatedMsgs = allMsgs.map((m) => {
+        if (m.ticket_id === sourceTicketId) {
+          return {
+            ...m,
+            ticket_id: targetTicketId,
+            message: `[Merged from #${source.ticket_number}]: ${m.message}`,
+          };
+        }
+        return m;
+      });
+
+      // Add merge notification internal note
+      updatedMsgs.push({
+        id: crypto.randomUUID(),
+        ticket_id: targetTicketId,
+        sender_id: "00000000-0000-0000-0000-000000000001",
+        sender_name: "Merge Engine",
+        message: `🔗 TICKET MERGED: Ticket #${source.ticket_number} ("${source.subject}") was merged into this ticket by ${mergedBy || "Staff"}. All previous conversation messages have been linked here.`,
+        message_type: "internal_note",
+        created_at: new Date().toISOString(),
+      });
+
+      fs.writeFileSync(MSGS_FILE, JSON.stringify(updatedMsgs, null, 2), "utf-8");
+    }
+  } catch (err) {
+    console.error("Failed to migrate messages in merge:", err);
+  }
+
+  // 2. Mark source ticket as closed & merged
+  tickets[sIdx] = {
+    ...source,
+    status: "closed",
+    subject: source.subject.startsWith("[MERGED")
+      ? source.subject
+      : `[MERGED into #${target.ticket_number}] ${source.subject}`,
+    custom_fields: {
+      ...(source.custom_fields || {}),
+      _merged_into: targetTicketId,
+      _merged_into_number: target.ticket_number,
+      _merged_at: new Date().toISOString(),
+      _merged_by: mergedBy || "Staff",
+    },
+    updated_at: new Date().toISOString(),
+  };
+
+  // 3. Update target ticket updated_at
+  tickets[tIdx] = {
+    ...target,
+    updated_at: new Date().toISOString(),
+  };
+
+  saveLocalTickets(tickets);
+  return { source: tickets[sIdx], target: tickets[tIdx] };
+}
+
+export function addTicketTag(ticketId: string, tag: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  const cleanTag = tag.trim().replace(/^#+/, "").toLowerCase();
+  if (!cleanTag) return tickets[idx];
+
+  const currentTags = tickets[idx].tags || [];
+  if (!currentTags.includes(cleanTag)) {
+    tickets[idx] = {
+      ...tickets[idx],
+      tags: [...currentTags, cleanTag],
+      updated_at: new Date().toISOString(),
+    };
+    saveLocalTickets(tickets);
+  }
+  return tickets[idx];
+}
+
+export function removeTicketTag(ticketId: string, tag: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  const cleanTag = tag.trim().replace(/^#+/, "").toLowerCase();
+  const currentTags = tickets[idx].tags || [];
+  tickets[idx] = {
+    ...tickets[idx],
+    tags: currentTags.filter((t) => t !== cleanTag),
+    updated_at: new Date().toISOString(),
+  };
+  saveLocalTickets(tickets);
+  return tickets[idx];
+}
+
+export function snoozeLocalTicket(ticketId: string, untilIso: string, reason?: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  tickets[idx] = {
+    ...tickets[idx],
+    snoozed_until: untilIso,
+    snooze_reason: reason || "Awaiting follow-up",
+    updated_at: new Date().toISOString(),
+  };
+  saveLocalTickets(tickets);
+  return tickets[idx];
+}
+
+export function unsnoozeLocalTicket(ticketId: string): TicketRecord | null {
+  const tickets = getLocalTickets();
+  const idx = tickets.findIndex((t) => t.id === ticketId);
+  if (idx === -1) return null;
+
+  tickets[idx] = {
+    ...tickets[idx],
+    snoozed_until: null,
+    snooze_reason: null,
+    updated_at: new Date().toISOString(),
+  };
+  saveLocalTickets(tickets);
+  return tickets[idx];
+}
+
+export function getOrComputeTicketSentiment(ticketId: string): SentimentAnalysisResult {
+  const tickets = getLocalTickets();
+  const t = tickets.find((x) => x.id === ticketId);
+  if (t?.sentiment) return t.sentiment;
+
+  const text = t ? `${t.subject}\n${t.description}` : "";
+  const result = analyzeCustomerSentiment(text);
+
+  if (t) {
+    updateLocalTicket(ticketId, { sentiment: result });
+  }
+  return result;
+}
+
